@@ -6,6 +6,4 @@ services:
     command: go run server.go
     volumes:
       - .:/code
-    ports:
-      - 8080:8080
     working_dir: /code
