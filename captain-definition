@@ -1,4 +1,12 @@
 {
  "schemaVersion" :2 ,
- "templateId" :"golang/1.15.3"
+ "dockerfileLines": [
+    "FROM golang:1.15 ",
+    "RUN go get -d -v golang.org/x/net/html ",
+    "RUN mkdir /app ",
+    "ADD ./ /app/ ",
+    "WORKDIR /app ",
+    "RUN go build -o main . ",
+    "CMD [\"/app/main\"]"
+  ]
 }
