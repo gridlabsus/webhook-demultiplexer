@@ -1,6 +1,6 @@
 [
   {
-    "host": "*",
+    "host": "localhost:8080",
     "targets": ["https://tobi.gridpane.com/api/stripe-checkout/webhook"]
   }
 ]
