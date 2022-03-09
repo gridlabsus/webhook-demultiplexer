@@ -1,6 +1,6 @@
 [
   {
-    "host": "localhost:8080",
+    "host": "https://webhook-demultiplexer.paas-internal.gridlabs.co/",
     "targets": ["https://tobi.gridpane.com/api/stripe-checkout/webhook"]
   }
 ]
